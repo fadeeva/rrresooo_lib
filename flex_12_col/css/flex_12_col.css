@@ -39,9 +39,16 @@ main, header, footer {
     align-items: left;
 }
 
-.column-center {
-    flex-direction: column;
+.column-center {   
     align-items: center;
+    flex-direction: column;
+	justify-content: center;
+}
+
+.column-end {   
+    align-items: center;
+    flex-direction: column;
+	justify-content: end;
 }
 /*---------------------*/
 
@@ -68,8 +75,7 @@ main, header, footer {
 .purple { background-color: #E799F3; }
 /*---------------*/
 
-.flex_1, .flex_2, .flex_3,
-.flex_4, .flex_6, .flex_12 { 
+.box-160 {
     height: 160px;
     box-sizing: border-box;
     border: 2px solid #171717;
@@ -85,9 +91,7 @@ h1, h2 {
 }
 
 /*---- MOBILE ----*/
-@media screen and (max-width: 480px) {
-    .flex_row {
-        flex-direction: column;
-    }
+@media screen and (max-width: 300px) {
+    .flex_row { flex-direction: column; }
     
 }
